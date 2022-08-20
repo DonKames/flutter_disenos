@@ -15,8 +15,9 @@ class MyApp extends StatelessWidget {
     SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle.light);
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Material App',
       initialRoute: 'home_screen',
+      title: 'Material App',
+      theme: ThemeData.dark(),
       routes: {
         'basic_design': (_) => const BasicDesignScreen(),
         'scroll_screen': (_) => const ScrollScreen(),
